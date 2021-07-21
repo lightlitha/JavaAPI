@@ -1,5 +1,8 @@
 package com.fresh.startup;
 
+import jakarta.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class Alien {
 	public String name;
 	public int points;
@@ -23,4 +26,9 @@ public class Alien {
 	public void setPoints(int points) {
 		this.points = points;
 	}
+	@Override
+	public String toString() {
+		return "Alien [name=" + name + ", points=" + points + ", id=" + id + "]";
+	}
+	
 }
